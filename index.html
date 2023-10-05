@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Clone</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/Home.svg" alt="" class="gray-filtered">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/Search.svg" alt="" class="gray-filtered">
+                            <span>Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/YourLibrary.svg" alt="" class="gray-filtered">
+                            <span>Your Library</span>
+                        </a>
+                    </li>
+                    <div style="height: 20px;"></div>
+                    <li>
+                        <a href="#">
+                            <img src="assets/CreatePlaylist.svg" alt="" class="gray-filtered">
+                            <span>Create Playlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/Like.svg" alt="" class="gray-filtered">
+                            <span>Liked Songs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr width="100%">
+            <div style="height: 20px;"></div>
+            <div class="menu playlists">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 5</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 6</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 7</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 8</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Created Playlist 10</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="current-song-cover">
+                <img src="images/song-cover2.jpg" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="playlist-header">
+                <div class="playlist-top">
+                    <div class="playlist-arrows">
+                        <div class="arrow-container">
+                            <img src="assets/LeftArrow.svg" alt="">
+                        </div>
+                        <div class="arrow-container">
+                            <img src="assets/RightArrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="playlist-top-email">
+                        <div class="arrow-container">
+                            <img src="images/profile-icon.jpeg" alt="">
+                        </div>
+                        <span>Lutezzi</span>
+                    </div>
+                </div>
+                <div class="playlist-content">
+                    <div class="playlist-cover">
+                        <img src="images/playlist-cover.jpg" alt="">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="playlist-public">ALBUM</div>
+                        <div class="playlist-title">
+                            808
+                        </div>
+                        <div class="playlist-description">
+                            Album from Ufo361
+                        </div>
+                        <div class="playlist-stats">
+                            <img src="assets/ufo361-logo.jpg" alt="" width="24px" height="24px">
+                            <span>Ufo361 •</span>
+                            <span>2018 •</span>
+                            <span>13 songs, </span>
+                            <span style="font-weight: 100;">46 min 2 sec</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-songs-container">
+                <div class="playlist-buttons">
+                    <div class="playlist-buttons-left">
+                        <div class="playlist-buttons-resume-pause">
+                            <img src="assets/Pause.svg" alt="">
+                        </div>
+                        <div class="playlist-buttons-like">
+                            <img src="assets/FiiledLike.svg" alt="" class="spotify-color">
+                        </div>
+                        <div class="playlist-buttons-download">
+                            <img src="assets/Download.svg" alt="">
+                        </div>
+                        <div class="playlist-buttons-three-dot">
+                            <img src="assets/ThreeDots.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="playlist-buttons-right">
+                        <div class="playlist-buttons-search">
+                            <img src="assets/Search.svg" alt="">
+                        </div>
+                        <div class="playlist-buttons-order">
+                            Custom Order
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-songs">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>TITLE</th>
+                            <th>ALBUM</th>
+                            <th>DATE ADDED</th>
+                            <th><img src="assets/Duration.svg" alt=""></th>
+                        </tr>
+                        <tr style="height: 20px;">
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Ohne Mich
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">4:11</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Beverly Hills
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:20</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Kontostand
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:17</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Balenciaga
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:20</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Superstar
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:30</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Power
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:29</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Alpträume
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:48</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Odio
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:37</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Dream
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">4:05</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Gewinn
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">3:00</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Erober die Welt
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">4:07</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        Stay High 2.0
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">4:07</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td class="song-title">
+                                <div class="song-image">
+                                    <img src="images/playlist-cover.jpg" alt="">
+                                </div>
+                                <div class="song-name-artist">
+                                    <div class="song-name">
+                                        808
+                                    </div>
+                                    <div class="song-artist">Ufo361</div>
+                                </div>
+                            </td>
+                            <td class="song-album">808</td>
+                            <td class="song-date-added">Apr 11, 2018</td>
+                            <td class="song-duration">2:05</td>
+                        </tr>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-player">
+        <div class="footer-player-left">
+            <div class="footer-player-left-song">
+                <div class="footer-player-left-song-name">Pass auf wen du liebst</div>
+                <div class="footer-player-left-song-artist">Ufo361</div>
+            </div>
+
+            <div class="footer-player-left-like">
+                <img src="assets/FiiledLike.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-player-middle">
+            <div class="footer-player-middle-buttons">
+                <img src="assets/Shuffle.svg" alt="" class="gray-filtered">
+                <img src="assets/Previous.svg" alt="" class="gray-filtered">
+                <div class="pause-button">
+                    <img src="assets/Pause.svg" alt="">
+                </div>
+                <img src="assets/Next.svg" alt="" class="gray-filtered">
+                <img src="assets/Repeat.svg" alt="" class="gray-filtered">
+            </div>
+            <div class="footer-player-middle-slider">
+                <div class="player-time">0:00</div>
+                <div class="player-slider">
+                    <input type="range" min="1" max="100" value="30">
+                </div>
+                <div class="player-time">3:29</div>
+            </div>
+        </div>
+        <div class="footer-player-right">
+            <div class="footer-player-right-buttons">
+                <img src="assets/Lyrics.svg" alt="">
+                <img src="assets/Queue.svg" alt="">
+                <img src="assets/Connect to a device.svg" alt="">
+                <img src="assets/Volume.svg" alt="">
+                <div class="player-slider">
+                    <input type="range" min="1" max="100" value="30">
+                </div>
+                <img src="assets/Full screen.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
